@@ -188,6 +188,7 @@ const checkWinConditions = () => {
     // Add cross to the scene
     crossMesh.scale.set(0,0,0);
     scene.add(crossMesh);
+    hiddenTiles.children = [];
     document.querySelector("#result").innerHTML = `player ${player.toUpperCase()} Win the Game`;
   }
   else if(hiddenTiles.children.length == 1) {
